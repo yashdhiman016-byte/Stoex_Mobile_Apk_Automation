@@ -1,4 +1,4 @@
-# Created at 2026-03-23T15:35:47.955
+# Created at 2026-03-25T14:06:22.736
 Boot Manifest-JAR contains absolute paths in classpath 'D:\Stoex_Appium_apk\target\test-classes'
 Hint: <argLine>-Djdk.net.URLClassPath.disableClassPathURLCheck=true</argLine>
 'other' has different root

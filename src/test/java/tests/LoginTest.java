@@ -1,4 +1,4 @@
-﻿package tests;
+package tests;
 
 import base.BaseTest;
 import org.testng.Assert;
@@ -11,6 +11,7 @@ public class LoginTest extends BaseTest {
 
     @DataProvider(name = "nameValidationCases")
     public Object[][] nameValidationCases() {
+        // Boundary value case for max-length validation.
         String long255 = "A".repeat(260);
 
         return new Object[][]{
@@ -49,9 +50,11 @@ public class LoginTest extends BaseTest {
                                  boolean shouldNavigateToMobileScreen) {
         ITestResult result = Reporter.getCurrentTestResult();
 
+        // Arrange: move to target screen and populate test data.
         navigateToSignUpForm();
         fillNameFields(firstName, lastName);
 
+        // Act: try to proceed and collect all observable outcomes.
         boolean continueClicked = clickContinue();
         boolean navigatedToNextScreen = isNextMobileScreenVisible();
         boolean firstNameErrorVisible = isFirstNameErrorVisible();
@@ -81,6 +84,9 @@ public class LoginTest extends BaseTest {
                 actual,
                 errorMsg);
 
+        // Assert rules:
+        // Positive case -> navigation must happen.
+        // Negative case -> no navigation; validation should block the user.
         if (shouldNavigateToMobileScreen) {
             Assert.assertTrue(continueClicked, testCaseId + " - Continue click did not happen for positive case.");
             Assert.assertTrue(navigatedToNextScreen, testCaseId + " - Valid input did not navigate to mobile screen.");
@@ -100,6 +106,7 @@ public class LoginTest extends BaseTest {
                                    boolean isValidMobile) {
         ITestResult result = Reporter.getCurrentTestResult();
 
+        // Precondition: mobile step is reachable only after valid name input.
         navigateToSignUpForm();
         fillNameFields("Yash", "Dhiman");
 
@@ -156,6 +163,7 @@ public class LoginTest extends BaseTest {
                                String expected,
                                String actual,
                                String errorMessage) {
+        // Listener reads these attributes and writes them to Extent + Excel reports.
         result.setAttribute("caseId", caseId);
         result.setAttribute("scenario", scenario);
         result.setAttribute("input", input);

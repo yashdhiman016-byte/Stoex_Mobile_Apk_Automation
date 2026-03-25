@@ -18,6 +18,7 @@ public final class ExtentManager {
     public static synchronized ExtentReports getExtent() {
         if (extent == null) {
             try {
+                // One timestamped report per suite run to preserve execution history.
                 Path reportsDir = Path.of("reports");
                 Files.createDirectories(reportsDir);
 

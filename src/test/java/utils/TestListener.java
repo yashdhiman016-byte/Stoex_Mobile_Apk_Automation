@@ -19,6 +19,7 @@ import java.util.List;
 public class TestListener implements ITestListener {
 
     private static final ExtentReports EXTENT = ExtentManager.getExtent();
+    // ThreadLocal keeps logs isolated when tests are parallelized in future.
     private static final ThreadLocal<ExtentTest> TEST_NODE = new ThreadLocal<>();
     private static final List<ExecutionRecord> RECORDS = Collections.synchronizedList(new ArrayList<>());
 
@@ -30,6 +31,7 @@ public class TestListener implements ITestListener {
 
     @Override
     public void onTestStart(ITestResult result) {
+        // Prefer data-provider case ID/scenario in report test name for readability.
         String testName = result.getMethod().getMethodName();
         Object[] params = result.getParameters();
         if (params != null && params.length >= 2) {
@@ -72,6 +74,7 @@ public class TestListener implements ITestListener {
     public void onFinish(ITestContext context) {
         EXTENT.flush();
 
+        // Export a flat execution summary to Excel for quick sharing/tracking.
         String timestamp = LocalDateTime.now().format(DateTimeFormatter.ofPattern("yyyyMMdd_HHmmss"));
         Path excelPath = Path.of("reports", "Stoex_Test_Results_" + timestamp + ".xlsx");
         ExcelReportWriter.write(excelPath, RECORDS);
@@ -87,6 +90,7 @@ public class TestListener implements ITestListener {
         }
 
         try {
+            // Attach both file path and embedded image for convenience in HTML report.
             String label = status + "_" + result.getMethod().getMethodName();
             String filePath = baseTest.captureScreenshot(label);
             String screenshotBase64 = baseTest.captureScreenshotBase64();
@@ -109,6 +113,7 @@ public class TestListener implements ITestListener {
         ExecutionRecord record = new ExecutionRecord();
         Object[] params = result.getParameters();
 
+        // Prefer explicit values set by tests; fallback to runtime values when absent.
         record.testCaseId = value(result, "caseId", params.length > 0 ? String.valueOf(params[0]) : result.getMethod().getMethodName());
         record.scenario = value(result, "scenario", "");
         record.input = value(result, "input", "");

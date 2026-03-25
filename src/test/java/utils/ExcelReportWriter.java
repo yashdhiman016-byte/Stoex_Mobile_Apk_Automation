@@ -48,6 +48,7 @@ public final class ExcelReportWriter {
                 }
 
                 CreationHelper creationHelper = workbook.getCreationHelper();
+                // Style used to make screenshot cells clickable as local file links.
                 CellStyle hyperlinkStyle = workbook.createCellStyle();
                 var font = workbook.createFont();
                 font.setUnderline((byte) 1);
@@ -82,6 +83,7 @@ public final class ExcelReportWriter {
                     Cell screenshotCell = row.createCell(7);
                     if (!safe(record.screenshotUrl).isEmpty()) {
                         screenshotCell.setCellValue("Open Screenshot");
+                        // FILE hyperlink opens the screenshot from disk when clicked.
                         Hyperlink hyperlink = creationHelper.createHyperlink(HyperlinkType.FILE);
                         hyperlink.setAddress(Path.of(record.screenshotUrl).toUri().toString());
                         screenshotCell.setHyperlink(hyperlink);

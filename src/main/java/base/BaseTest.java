@@ -27,6 +27,7 @@ public class BaseTest {
 
     protected AndroidDriver driver;
 
+    // Locators for the sign-up onboarding flow.
     protected static final By SKIP_BUTTON = By.xpath("//android.widget.TextView[@text=\"Skip\"]");
     protected static final By SIGN_UP_NOW_BUTTON = By.xpath("//android.widget.TextView[@text=\"Sign Up Now\"]");
     protected static final By CONTINUE_BUTTON = By.xpath("//android.widget.TextView[@text=\"Continue\"]");
@@ -45,6 +46,7 @@ public class BaseTest {
 
     @BeforeMethod
     public void setup() throws Exception {
+        // Keep capabilities configurable via Maven system properties for local/CI runs.
         String deviceName = System.getProperty("deviceName", "Pixel 3a");
         String appiumServer = System.getProperty("appiumServer", "http://127.0.0.1:4723");
         String apkPath = System.getProperty("appPath", "C:/Users/yash.dhiman/Downloads/stoex2.0.apk");
@@ -61,10 +63,12 @@ public class BaseTest {
     }
 
     protected WebDriverWait waitForUi() {
+        // Centralized explicit wait so all interactions use the same timeout policy.
         return new WebDriverWait(driver, Duration.ofSeconds(25));
     }
 
     protected void navigateToSignUpForm() {
+        // Standard entry path used by all tests before field validation starts.
         WebDriverWait wait = waitForUi();
         wait.until(ExpectedConditions.elementToBeClickable(SKIP_BUTTON)).click();
         wait.until(ExpectedConditions.elementToBeClickable(SIGN_UP_NOW_BUTTON)).click();
@@ -100,6 +104,7 @@ public class BaseTest {
     protected boolean clickContinue() {
         try {
             try {
+                // On some Android builds keyboard can block the Continue button.
                 driver.hideKeyboard();
             } catch (Exception ignored) {
             }
@@ -185,6 +190,7 @@ public class BaseTest {
     }
 
     public void longPress(WebElement element) {
+        // Appium mobile gesture API for long-press interactions.
         driver.executeScript("mobile: longClickGesture", Map.of(
                 "elementId", ((RemoteWebElement) element).getId(),
                 "duration", 2000
@@ -192,6 +198,7 @@ public class BaseTest {
     }
 
     public boolean swipe(WebElement element, String direction, double percent) {
+        // Returns whether further swipe in the same direction is possible.
         return (Boolean) driver.executeScript("mobile: swipeGesture", Map.of(
                 "elementId", ((RemoteWebElement) element).getId(),
                 "direction", direction,
