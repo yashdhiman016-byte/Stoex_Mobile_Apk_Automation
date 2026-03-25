@@ -1,0 +1,798 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite, 6 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-StoexSuite" class="navigator-link">
+              <span class="suite-name border-failed">StoexSuite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-StoexSuite" class="navigator-link ">
+                    <span>D:\Stoex_Appium_apk\testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-StoexSuite" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-StoexSuite" class="navigator-link ">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-StoexSuite" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-StoexSuite" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-StoexSuite" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-StoexSuite" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">18 methods, 6 failed,   12 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-StoexSuite" class="hide-methods failed suite-StoexSuite"> (hide)</a> <!-- hide-methods failed suite-StoexSuite -->
+                      <a href="#" panel-name="suite-StoexSuite" class="show-methods failed suite-StoexSuite"> (show)</a> <!-- show-methods failed suite-StoexSuite -->
+                    </span>
+                    <div class="method-list-content failed suite-StoexSuite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-StoexSuite" title="tests.LoginTest" class="method navigator-link" hash-for-method="validateNameFlow(NAME_TC_04, Leading/trailing spaces (negative test case),   Yash, Dhiman  , false)">validateNameFlow(NAME_TC_04, Leading/trailing spaces (negative test case),   Yash, Dhiman  , false)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-StoexSuite" title="tests.LoginTest" class="method navigator-link" hash-for-method="validateNameFlow(NAME_TC_11, Long text 255+, AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA...)">validateNameFlow(NAME_TC_11, Long text 255+, AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-StoexSuite" title="tests.LoginTest" class="method navigator-link" hash-for-method="validateNameFlow(NAME_TC_03, Small chars (negative test case), ab, cd, false)">validateNameFlow(NAME_TC_03, Small chars (negative test case), ab, cd, false)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-StoexSuite" title="tests.LoginTest" class="method navigator-link" hash-for-method="validateNameFlow(NAME_TC_10, Special chars in names, @#$, %^&amp;, false)">validateNameFlow(NAME_TC_10, Special chars in names, @#$, %^&, false)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-StoexSuite" title="tests.LoginTest" class="method navigator-link" hash-for-method="validateNameFlow(NAME_TC_09, Numeric first name, 1234, Dhiman, false)">validateNameFlow(NAME_TC_09, Numeric first name, 1234, Dhiman, false)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-StoexSuite" title="tests.LoginTest" class="method navigator-link" hash-for-method="validateNameFlow(NAME_TC_02, Single chars (negative test case), A, B, false)">validateNameFlow(NAME_TC_02, Single chars (negative test case), A, B, false)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-StoexSuite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-StoexSuite" class="hide-methods passed suite-StoexSuite"> (hide)</a> <!-- hide-methods passed suite-StoexSuite -->
+                      <a href="#" panel-name="suite-StoexSuite" class="show-methods passed suite-StoexSuite"> (show)</a> <!-- show-methods passed suite-StoexSuite -->
+                    </span>
+                    <div class="method-list-content passed suite-StoexSuite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-StoexSuite" title="tests.LoginTest" class="method navigator-link" hash-for-method="validateMobileFlow(MOB_TC_03, Less than 10 digits, 12345, false)">validateMobileFlow(MOB_TC_03, Less than 10 digits, 12345, false)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-StoexSuite" title="tests.LoginTest" class="method navigator-link" hash-for-method="validateMobileFlow(MOB_TC_05, Alphabets, abcdefghij, false)">validateMobileFlow(MOB_TC_05, Alphabets, abcdefghij, false)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-StoexSuite" title="tests.LoginTest" class="method navigator-link" hash-for-method="validateMobileFlow(MOB_TC_06, Special characters, @#$%^&amp;*()!, false)">validateMobileFlow(MOB_TC_06, Special characters, @#$%^&*()!, false)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-StoexSuite" title="tests.LoginTest" class="method navigator-link" hash-for-method="validateMobileFlow(MOB_TC_02, Leading zero number (invalid as per rule set), 0987654321, false)">validateMobileFlow(MOB_TC_02, Leading zero number (invalid as per rule set), 0987654321, false)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-StoexSuite" title="tests.LoginTest" class="method navigator-link" hash-for-method="validateMobileFlow(MOB_TC_07, Only spaces,           , false)">validateMobileFlow(MOB_TC_07, Only spaces,           , false)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-StoexSuite" title="tests.LoginTest" class="method navigator-link" hash-for-method="validateMobileFlow(MOB_TC_04, More than 10 digits, 123456789012, false)">validateMobileFlow(MOB_TC_04, More than 10 digits, 123456789012, false)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-StoexSuite" title="tests.LoginTest" class="method navigator-link" hash-for-method="validateMobileFlow(MOB_TC_01, Valid 10-digit number, 9876543210, true)">validateMobileFlow(MOB_TC_01, Valid 10-digit number, 9876543210, true)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-StoexSuite" title="tests.LoginTest" class="method navigator-link" hash-for-method="validateNameFlow(NAME_TC_06, Empty last name, Yash, , false)">validateNameFlow(NAME_TC_06, Empty last name, Yash, , false)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-StoexSuite" title="tests.LoginTest" class="method navigator-link" hash-for-method="validateNameFlow(NAME_TC_08, Only spaces,    ,    , false)">validateNameFlow(NAME_TC_08, Only spaces,    ,    , false)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-StoexSuite" title="tests.LoginTest" class="method navigator-link" hash-for-method="validateNameFlow(NAME_TC_07, Both empty, , , false)">validateNameFlow(NAME_TC_07, Both empty, , , false)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-StoexSuite" title="tests.LoginTest" class="method navigator-link" hash-for-method="validateNameFlow(NAME_TC_05, Empty first name, , Dhiman, false)">validateNameFlow(NAME_TC_05, Empty first name, , Dhiman, false)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-StoexSuite" title="tests.LoginTest" class="method navigator-link" hash-for-method="validateNameFlow(NAME_TC_01, Valid standard name, Yash, Dhiman, true)">validateNameFlow(NAME_TC_01, Valid standard name, Yash, Dhiman, true)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-StoexSuite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-StoexSuite" class="panel StoexSuite">
+          <div class="suite-StoexSuite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">tests.LoginTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateNameFlow(NAME_TC_04, Leading/trailing spaces (negative test case),   Yash, Dhiman  , false)">
+                  </a> <!-- validateNameFlow(NAME_TC_04, Leading/trailing spaces (negative test case),   Yash, Dhiman  , false) -->
+                  <span class="method-name">validateNameFlow</span>
+                  <span class="parameters">(NAME_TC_04,Leading/trailing spaces (negative test case),  Yash,Dhiman  ,false)</span>
+                  <div class="stack-trace">java.lang.AssertionError: NAME_TC_04 - Invalid input navigated to mobile screen. This is FAIL by rule. expected [false] but found [true]
+	at tests.LoginTest.validateNameFlow(LoginTest.java:89)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateNameFlow(NAME_TC_11, Long text 255+, AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA...)">
+                  </a> <!-- validateNameFlow(NAME_TC_11, Long text 255+, AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA...) -->
+                  <span class="method-name">validateNameFlow</span>
+                  <span class="parameters">(NAME_TC_11,Long text 255+,AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,false)</span>
+                  <div class="stack-trace">java.lang.AssertionError: NAME_TC_11 - Invalid input navigated to mobile screen. This is FAIL by rule. expected [false] but found [true]
+	at tests.LoginTest.validateNameFlow(LoginTest.java:89)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateNameFlow(NAME_TC_03, Small chars (negative test case), ab, cd, false)">
+                  </a> <!-- validateNameFlow(NAME_TC_03, Small chars (negative test case), ab, cd, false) -->
+                  <span class="method-name">validateNameFlow</span>
+                  <span class="parameters">(NAME_TC_03,Small chars (negative test case),ab,cd,false)</span>
+                  <div class="stack-trace">java.lang.AssertionError: NAME_TC_03 - Invalid input navigated to mobile screen. This is FAIL by rule. expected [false] but found [true]
+	at tests.LoginTest.validateNameFlow(LoginTest.java:89)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateNameFlow(NAME_TC_10, Special chars in names, @#$, %^&amp;, false)">
+                  </a> <!-- validateNameFlow(NAME_TC_10, Special chars in names, @#$, %^&, false) -->
+                  <span class="method-name">validateNameFlow</span>
+                  <span class="parameters">(NAME_TC_10,Special chars in names,@#$,%^&,false)</span>
+                  <div class="stack-trace">java.lang.AssertionError: NAME_TC_10 - Invalid input navigated to mobile screen. This is FAIL by rule. expected [false] but found [true]
+	at tests.LoginTest.validateNameFlow(LoginTest.java:89)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateNameFlow(NAME_TC_09, Numeric first name, 1234, Dhiman, false)">
+                  </a> <!-- validateNameFlow(NAME_TC_09, Numeric first name, 1234, Dhiman, false) -->
+                  <span class="method-name">validateNameFlow</span>
+                  <span class="parameters">(NAME_TC_09,Numeric first name,1234,Dhiman,false)</span>
+                  <div class="stack-trace">java.lang.AssertionError: NAME_TC_09 - Invalid input navigated to mobile screen. This is FAIL by rule. expected [false] but found [true]
+	at tests.LoginTest.validateNameFlow(LoginTest.java:89)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateNameFlow(NAME_TC_02, Single chars (negative test case), A, B, false)">
+                  </a> <!-- validateNameFlow(NAME_TC_02, Single chars (negative test case), A, B, false) -->
+                  <span class="method-name">validateNameFlow</span>
+                  <span class="parameters">(NAME_TC_02,Single chars (negative test case),A,B,false)</span>
+                  <div class="stack-trace">java.lang.AssertionError: NAME_TC_02 - Invalid input navigated to mobile screen. This is FAIL by rule. expected [false] but found [true]
+	at tests.LoginTest.validateNameFlow(LoginTest.java:89)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-StoexSuite-class-failed -->
+          <div class="suite-StoexSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.LoginTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateMobileFlow(MOB_TC_03, Less than 10 digits, 12345, false)">
+                  </a> <!-- validateMobileFlow(MOB_TC_03, Less than 10 digits, 12345, false) -->
+                  <span class="method-name">validateMobileFlow</span>
+                  <span class="parameters">(MOB_TC_03,Less than 10 digits,12345,false)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateMobileFlow(MOB_TC_05, Alphabets, abcdefghij, false)">
+                  </a> <!-- validateMobileFlow(MOB_TC_05, Alphabets, abcdefghij, false) -->
+                  <span class="method-name">validateMobileFlow</span>
+                  <span class="parameters">(MOB_TC_05,Alphabets,abcdefghij,false)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateMobileFlow(MOB_TC_06, Special characters, @#$%^&amp;*()!, false)">
+                  </a> <!-- validateMobileFlow(MOB_TC_06, Special characters, @#$%^&*()!, false) -->
+                  <span class="method-name">validateMobileFlow</span>
+                  <span class="parameters">(MOB_TC_06,Special characters,@#$%^&*()!,false)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateMobileFlow(MOB_TC_02, Leading zero number (invalid as per rule set), 0987654321, false)">
+                  </a> <!-- validateMobileFlow(MOB_TC_02, Leading zero number (invalid as per rule set), 0987654321, false) -->
+                  <span class="method-name">validateMobileFlow</span>
+                  <span class="parameters">(MOB_TC_02,Leading zero number (invalid as per rule set),0987654321,false)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateMobileFlow(MOB_TC_07, Only spaces,           , false)">
+                  </a> <!-- validateMobileFlow(MOB_TC_07, Only spaces,           , false) -->
+                  <span class="method-name">validateMobileFlow</span>
+                  <span class="parameters">(MOB_TC_07,Only spaces,          ,false)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateMobileFlow(MOB_TC_04, More than 10 digits, 123456789012, false)">
+                  </a> <!-- validateMobileFlow(MOB_TC_04, More than 10 digits, 123456789012, false) -->
+                  <span class="method-name">validateMobileFlow</span>
+                  <span class="parameters">(MOB_TC_04,More than 10 digits,123456789012,false)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateMobileFlow(MOB_TC_01, Valid 10-digit number, 9876543210, true)">
+                  </a> <!-- validateMobileFlow(MOB_TC_01, Valid 10-digit number, 9876543210, true) -->
+                  <span class="method-name">validateMobileFlow</span>
+                  <span class="parameters">(MOB_TC_01,Valid 10-digit number,9876543210,true)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateNameFlow(NAME_TC_06, Empty last name, Yash, , false)">
+                  </a> <!-- validateNameFlow(NAME_TC_06, Empty last name, Yash, , false) -->
+                  <span class="method-name">validateNameFlow</span>
+                  <span class="parameters">(NAME_TC_06,Empty last name,Yash,,false)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateNameFlow(NAME_TC_08, Only spaces,    ,    , false)">
+                  </a> <!-- validateNameFlow(NAME_TC_08, Only spaces,    ,    , false) -->
+                  <span class="method-name">validateNameFlow</span>
+                  <span class="parameters">(NAME_TC_08,Only spaces,   ,   ,false)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateNameFlow(NAME_TC_07, Both empty, , , false)">
+                  </a> <!-- validateNameFlow(NAME_TC_07, Both empty, , , false) -->
+                  <span class="method-name">validateNameFlow</span>
+                  <span class="parameters">(NAME_TC_07,Both empty,,,false)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateNameFlow(NAME_TC_05, Empty first name, , Dhiman, false)">
+                  </a> <!-- validateNameFlow(NAME_TC_05, Empty first name, , Dhiman, false) -->
+                  <span class="method-name">validateNameFlow</span>
+                  <span class="parameters">(NAME_TC_05,Empty first name,,Dhiman,false)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateNameFlow(NAME_TC_01, Valid standard name, Yash, Dhiman, true)">
+                  </a> <!-- validateNameFlow(NAME_TC_01, Valid standard name, Yash, Dhiman, true) -->
+                  <span class="method-name">validateNameFlow</span>
+                  <span class="parameters">(NAME_TC_01,Valid standard name,Yash,Dhiman,true)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-StoexSuite-class-passed -->
+        </div> <!-- panel StoexSuite -->
+        <div panel-name="test-xml-StoexSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">D:\Stoex_Appium_apk\testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;StoexSuite&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;utils.TestListener&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;NameFieldValidationTests&quot; verbose=&quot;0&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;tests.LoginTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- NameFieldValidationTests --&gt;
+&lt;/suite&gt; &lt;!-- StoexSuite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-StoexSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for StoexSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">NameFieldValidationTests (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-StoexSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for StoexSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-StoexSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for StoexSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_StoexSuite');
+function tableData_StoexSuite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(18);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'validateMobileFlow')
+data.setCell(0, 2, 'tests.LoginTest')
+data.setCell(0, 3, 47968);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'validateMobileFlow')
+data.setCell(1, 2, 'tests.LoginTest')
+data.setCell(1, 3, 33733);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'validateNameFlow')
+data.setCell(2, 2, 'tests.LoginTest')
+data.setCell(2, 3, 32903);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'validateNameFlow')
+data.setCell(3, 2, 'tests.LoginTest')
+data.setCell(3, 3, 32157);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'validateNameFlow')
+data.setCell(4, 2, 'tests.LoginTest')
+data.setCell(4, 3, 31951);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'validateNameFlow')
+data.setCell(5, 2, 'tests.LoginTest')
+data.setCell(5, 3, 31914);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'validateNameFlow')
+data.setCell(6, 2, 'tests.LoginTest')
+data.setCell(6, 3, 31810);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'validateNameFlow')
+data.setCell(7, 2, 'tests.LoginTest')
+data.setCell(7, 3, 31776);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'validateNameFlow')
+data.setCell(8, 2, 'tests.LoginTest')
+data.setCell(8, 3, 31761);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'validateNameFlow')
+data.setCell(9, 2, 'tests.LoginTest')
+data.setCell(9, 3, 31734);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'validateNameFlow')
+data.setCell(10, 2, 'tests.LoginTest')
+data.setCell(10, 3, 31273);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'validateMobileFlow')
+data.setCell(11, 2, 'tests.LoginTest')
+data.setCell(11, 3, 29601);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'validateMobileFlow')
+data.setCell(12, 2, 'tests.LoginTest')
+data.setCell(12, 3, 29075);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'validateMobileFlow')
+data.setCell(13, 2, 'tests.LoginTest')
+data.setCell(13, 3, 27506);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'validateNameFlow')
+data.setCell(14, 2, 'tests.LoginTest')
+data.setCell(14, 3, 21844);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'validateNameFlow')
+data.setCell(15, 2, 'tests.LoginTest')
+data.setCell(15, 3, 20862);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'validateMobileFlow')
+data.setCell(16, 2, 'tests.LoginTest')
+data.setCell(16, 3, 19682);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'validateMobileFlow')
+data.setCell(17, 2, 'tests.LoginTest')
+data.setCell(17, 3, 18873);
+window.suiteTableData['StoexSuite']= { tableData: data, tableDiv: 'times-div-StoexSuite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 8 minutes</span>
+              <div id="times-div-StoexSuite">
+              </div> <!-- times-div-StoexSuite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-StoexSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for StoexSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-StoexSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-StoexSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.LoginTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validateMobileFlow(MOB_TC_01, Valid 10-digit number, 9876543210, true)</span>
+                <span class="method-start">47114 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">97179 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">99376 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validateMobileFlow(MOB_TC_02, Leading zero number (invalid as per rule set), 0987654321, false)</span>
+                <span class="method-start">111118 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">131798 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">132903 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validateMobileFlow(MOB_TC_03, Less than 10 digits, 12345, false)</span>
+                <span class="method-start">140546 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">175448 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">176607 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validateMobileFlow(MOB_TC_04, More than 10 digits, 123456789012, false)</span>
+                <span class="method-start">187534 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">207322 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">208630 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validateMobileFlow(MOB_TC_05, Alphabets, abcdefghij, false)</span>
+                <span class="method-start">215653 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">246463 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">247706 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validateMobileFlow(MOB_TC_06, Special characters, @#$%^&*()!, false)</span>
+                <span class="method-start">255542 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">285730 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">286870 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validateMobileFlow(MOB_TC_07, Only spaces,           , false)</span>
+                <span class="method-start">294431 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">322581 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">323563 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validateNameFlow(NAME_TC_01, Valid standard name, Yash, Dhiman, true)</span>
+                <span class="method-start">329859 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">362236 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">363093 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">validateNameFlow(NAME_TC_02, Single chars (negative test case), A, B, false)</span>
+                <span class="method-start">369783 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">402164 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">402999 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">validateNameFlow(NAME_TC_03, Small chars (negative test case), ab, cd, false)</span>
+                <span class="method-start">409411 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">441714 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">442562 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">validateNameFlow(NAME_TC_04, Leading/trailing spaces (negative test case),   Yash, Dhiman  , false)</span>
+                <span class="method-start">449084 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">481548 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">482420 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validateNameFlow(NAME_TC_05, Empty first name, , Dhiman, false)</span>
+                <span class="method-start">489611 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">523408 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">524437 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validateNameFlow(NAME_TC_06, Empty last name, Yash, , false)</span>
+                <span class="method-start">531021 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">562837 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">563874 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validateNameFlow(NAME_TC_07, Both empty, , , false)</span>
+                <span class="method-start">570248 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">591629 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">592415 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validateNameFlow(NAME_TC_08, Only spaces,    ,    , false)</span>
+                <span class="method-start">598578 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">621504 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">623192 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">validateNameFlow(NAME_TC_09, Numeric first name, 1234, Dhiman, false)</span>
+                <span class="method-start">630424 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">663070 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">663957 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">validateNameFlow(NAME_TC_10, Special chars in names, @#$, %^&, false)</span>
+                <span class="method-start">670457 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">702986 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">704028 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">validateNameFlow(NAME_TC_11, Long text 255+, AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA...)</span>
+                <span class="method-start">710476 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">742688 ms</span>
+              </div> <!-- configuration-method after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>

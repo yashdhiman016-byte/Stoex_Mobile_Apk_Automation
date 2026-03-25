@@ -1,0 +1,35 @@
+# Created at 2026-03-23T12:38:39.856
+java.lang.IllegalArgumentException: Address of hyperlink must be a valid URI
+	at org.apache.poi.xssf.usermodel.XSSFHyperlink.validate(XSSFHyperlink.java:257)
+	at org.apache.poi.xssf.usermodel.XSSFHyperlink.setAddress(XSSFHyperlink.java:238)
+	at utils.ExcelReportWriter.write(ExcelReportWriter.java:71)
+	at utils.TestListener.onFinish(TestListener.java:72)
+	at org.testng.TestRunner.fireEvent(TestRunner.java:873)
+	at org.testng.TestRunner.afterRun(TestRunner.java:828)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+Caused by: java.net.URISyntaxException: Illegal character in opaque part at index 2: D:\Stoex_Appium_apk\reports\screenshots\PASS_validateMobileFlow_20260323_122924_115.png
+	at java.base/java.net.URI$Parser.fail(URI.java:3003)
+	at java.base/java.net.URI$Parser.checkChars(URI.java:3174)
+	at java.base/java.net.URI$Parser.parse(URI.java:3210)
+	at java.base/java.net.URI.<init>(URI.java:649)
+	at org.apache.poi.xssf.usermodel.XSSFHyperlink.validate(XSSFHyperlink.java:255)
+	... 23 more
+
+
